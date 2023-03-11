@@ -27,7 +27,7 @@ struct ContentView: View {
                         .font(.title)
                         .padding()
                     
-                    VStack(spacing: 10) { // modified spacing between rows
+                    VStack(spacing: 8) { // modified spacing between rows
                         
                         HStack(spacing: 8) {
                             NavigationLink(destination: PersonalizedAssistanceView()) {
@@ -148,5 +148,11 @@ struct MentalHealthSupportView: View {
     var body: some View {
         // Add your view for navigation assistance here
         Text("Mental Health Support View")
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
